@@ -30,4 +30,4 @@ versioning follows [SemVer](https://semver.org/).
 - MkDocs Material publishing configuration.
 - Dual licensing: MIT (code/schemas/tooling) and CC BY 4.0 (content).
 
-[1.0.0]: https://github.com/PolymathWizard/PRIMER-Process-First-AI-Readiness/releases/tag/v1.0.0
+[1.0.0]: https://github.com/PolymathWizard/Primer-AI-Readiness/releases/tag/v1.0.0

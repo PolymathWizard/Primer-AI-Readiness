@@ -2,9 +2,9 @@ site_name: PRIMER — Process-First AI Readiness Intelligence
 site_description: >-
   Document first, deploy second. A 10-prompt framework and multi-agent setup
   for process readiness before AI automation. A BHIL framework.
-site_url: https://polymathwizard.github.io/PRIMER-Process-First-AI-Readiness/
-repo_url: https://github.com/PolymathWizard/PRIMER-Process-First-AI-Readiness
-repo_name: PolymathWizard/PRIMER
+site_url: https://polymathwizard.github.io/Primer-AI-Readiness/
+repo_url: https://github.com/PolymathWizard/Primer-AI-Readiness
+repo_name: PolymathWizard/Primer-AI-Readiness
 edit_uri: edit/main/
 
 theme:

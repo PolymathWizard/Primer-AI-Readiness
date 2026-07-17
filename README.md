@@ -47,7 +47,7 @@ See [docs/evidence-classification.md](docs/evidence-classification.md).
 ## Repository Structure
 
 ```
-PRIMER-Process-First-AI-Readiness/
+Primer-AI-Readiness/
 ├── README.md                  # You are here
 ├── CLAUDE.md                  # Claude Code orchestrator instructions
 ├── .claude/agents/            # 10 subagent definitions (one per SP module)
