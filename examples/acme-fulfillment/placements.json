@@ -1,0 +1,114 @@
+{
+  "$primer_schema": "matrix-placement.schema.json",
+  "engagement_id": "acme-2026-q3-snapshot",
+  "provisional": true,
+  "placements": [
+    {
+      "process_id": "P-001",
+      "impact_subscores": {
+        "volume": 5,
+        "time_per_run": 4,
+        "error_cost": 4,
+        "downstream_unblocking": 5
+      },
+      "complexity_subscores": {
+        "decision_rule_count": 2,
+        "tribal_density": 2,
+        "data_fragility": 2,
+        "exception_rate": 2,
+        "system_count": 2
+      },
+      "monthly_volume": 600,
+      "volume_evidence_class": "STATED",
+      "gate": {
+        "sop_record_complete": false,
+        "ambiguities_unresolved": 1,
+        "gating_data_findings_open": 1,
+        "baseline_captured": false,
+        "gate_evidence_classes": [
+          "VERIFIED",
+          "STATED"
+        ]
+      },
+      "computed": {
+        "impact": 5,
+        "complexity": 2,
+        "quadrant": "Automate Now",
+        "volume_weight": 2.7789,
+        "priority": 13.8944,
+        "gate_passed": false
+      }
+    },
+    {
+      "process_id": "P-002",
+      "impact_subscores": {
+        "volume": 4,
+        "time_per_run": 4,
+        "error_cost": 3,
+        "downstream_unblocking": 4
+      },
+      "complexity_subscores": {
+        "decision_rule_count": 2,
+        "tribal_density": 1,
+        "data_fragility": 1,
+        "exception_rate": 2,
+        "system_count": 2
+      },
+      "monthly_volume": 412,
+      "volume_evidence_class": "CORROBORATED",
+      "gate": {
+        "sop_record_complete": true,
+        "ambiguities_unresolved": 0,
+        "gating_data_findings_open": 0,
+        "baseline_captured": true,
+        "gate_evidence_classes": [
+          "VERIFIED",
+          "CORROBORATED"
+        ]
+      },
+      "computed": {
+        "impact": 4,
+        "complexity": 2,
+        "quadrant": "Automate Now",
+        "volume_weight": 2.616,
+        "priority": 10.4638,
+        "gate_passed": true
+      }
+    },
+    {
+      "process_id": "P-003",
+      "impact_subscores": {
+        "volume": 2,
+        "time_per_run": 3,
+        "error_cost": 3,
+        "downstream_unblocking": 2
+      },
+      "complexity_subscores": {
+        "decision_rule_count": 3,
+        "tribal_density": 4,
+        "data_fragility": 3,
+        "exception_rate": 3,
+        "system_count": 3
+      },
+      "monthly_volume": 95,
+      "volume_evidence_class": "VERIFIED",
+      "gate": {
+        "sop_record_complete": false,
+        "ambiguities_unresolved": 0,
+        "gating_data_findings_open": 1,
+        "baseline_captured": true,
+        "gate_evidence_classes": [
+          "VERIFIED"
+        ]
+      },
+      "computed": {
+        "impact": 3,
+        "complexity": 3,
+        "quadrant": "Leave Alone",
+        "volume_weight": 1.9823,
+        "priority": 5.9468,
+        "gate_passed": false
+      }
+    }
+  ]
+}

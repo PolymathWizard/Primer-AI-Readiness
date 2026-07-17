@@ -1,0 +1,117 @@
+{
+  "$primer_schema": "readiness-scorecard.schema.json",
+  "engagement_id": "acme-2026-q3-snapshot",
+  "nominated_by": "COO (owner of the automation decision)",
+  "scorecards": [
+    {
+      "process_id": "P-001",
+      "process_name": "Order Entry",
+      "dimensions": {
+        "documentation": {
+          "score": 1,
+          "justification": "Partial checklist exists; last updated two owners ago.",
+          "evidence_class": "VERIFIED"
+        },
+        "decision_logic": {
+          "score": 0,
+          "justification": "Discount-approval rule differs between two operators; ambiguity open (C-004).",
+          "evidence_class": "VERIFIED"
+        },
+        "data_dependencies": {
+          "score": 1,
+          "justification": "Pricing sheet is an unversioned spreadsheet; remediation planned.",
+          "evidence_class": "VERIFIED"
+        },
+        "metrics_baseline": {
+          "score": 1,
+          "justification": "Volume is owner recollection only (C-001); no cycle-time measure.",
+          "evidence_class": "STATED"
+        },
+        "bottleneck_clarity": {
+          "score": 1,
+          "justification": "Manager approval mapped but not yet classified structural vs incidental.",
+          "evidence_class": "CORROBORATED"
+        }
+      },
+      "computed": {
+        "total": 4,
+        "grade_band": "Not Ready",
+        "demotions": []
+      }
+    },
+    {
+      "process_id": "P-002",
+      "process_name": "Invoice Matching",
+      "dimensions": {
+        "documentation": {
+          "score": 2,
+          "justification": "Current SOP record completed to the twelve-section standard during the snapshot.",
+          "evidence_class": "VERIFIED"
+        },
+        "decision_logic": {
+          "score": 2,
+          "justification": "Three-way-match rules externalized; both operators gave identical rules.",
+          "evidence_class": "CORROBORATED"
+        },
+        "data_dependencies": {
+          "score": 2,
+          "justification": "All inputs system-resident; no fragility flags on inspection.",
+          "evidence_class": "VERIFIED"
+        },
+        "metrics_baseline": {
+          "score": 1,
+          "justification": "Cycle time inferred from a 20-run timestamp sample (C-005), not yet measured.",
+          "evidence_class": "INFERENCE"
+        },
+        "bottleneck_clarity": {
+          "score": 2,
+          "justification": "Single approval step audited: 3 of last 50 approvals changed the outcome; classified structural (SoD).",
+          "evidence_class": "VERIFIED"
+        }
+      },
+      "computed": {
+        "total": 9,
+        "grade_band": "Automation-Ready",
+        "demotions": []
+      }
+    },
+    {
+      "process_id": "P-003",
+      "process_name": "Returns Processing",
+      "dimensions": {
+        "documentation": {
+          "score": 2,
+          "justification": "Owner states the SOP is current (C-006); not independently inspected.",
+          "evidence_class": "STATED"
+        },
+        "decision_logic": {
+          "score": 1,
+          "justification": "Restock-vs-scrap rule is tribal \u2014 resides with one senior operator.",
+          "evidence_class": "CORROBORATED"
+        },
+        "data_dependencies": {
+          "score": 1,
+          "justification": "RMA data re-keyed from email into the warehouse system.",
+          "evidence_class": "VERIFIED"
+        },
+        "metrics_baseline": {
+          "score": 2,
+          "justification": "Volume and error rate measured from RMA log export (C-003).",
+          "evidence_class": "VERIFIED"
+        },
+        "bottleneck_clarity": {
+          "score": 1,
+          "justification": "Queue at warehouse inspection mapped; classification pending wait-time data.",
+          "evidence_class": "UNCORROBORATED"
+        }
+      },
+      "computed": {
+        "total": 6,
+        "grade_band": "Conditionally Ready",
+        "demotions": [
+          "documentation"
+        ]
+      }
+    }
+  ]
+}

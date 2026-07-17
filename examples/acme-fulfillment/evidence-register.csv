@@ -1,0 +1,8 @@
+claim_id,module,process_id,claim,source,date,method,evidence_class,supersedes
+C-001,SP-9,P-001,Order entry runs ~600/mo,Ops manager interview,2026-06-30,interview,STATED,
+C-002,SP-9,P-002,Invoice matching runs 412/mo,AP system export,2026-07-01,system export,VERIFIED,
+C-003,SP-9,P-003,Returns processed 95/mo,RMA log,2026-07-01,system export,VERIFIED,
+C-004,SP-9,P-001,Two operators gave different discount-approval rules,Operator interviews x2,2026-07-02,interview comparison,VERIFIED,
+C-005,SP-9,P-002,Invoice match cycle time 1.8 days median,Timestamp analysis 20-run sample,2026-07-02,inference from timestamps,INFERENCE,
+C-006,SP-9,P-003,Returns SOP current per owner,Owner interview,2026-07-02,interview,STATED,
+C-007,SP-9,P-002,Owner-described volume matches export,Owner interview + AP export,2026-07-03,corroboration,CORROBORATED,C-002
