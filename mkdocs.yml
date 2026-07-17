@@ -1,0 +1,85 @@
+site_name: PRIMER — Process-First AI Readiness Intelligence
+site_description: >-
+  Document first, deploy second. A 10-prompt framework and multi-agent setup
+  for process readiness before AI automation. A BHIL framework.
+site_url: https://polymathwizard.github.io/PRIMER-Process-First-AI-Readiness/
+repo_url: https://github.com/PolymathWizard/PRIMER-Process-First-AI-Readiness
+repo_name: PolymathWizard/PRIMER
+edit_uri: edit/main/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.action.edit
+    - content.code.copy
+
+nav:
+  - Home: README.md
+  - Methodology:
+      - Overview: docs/overview.md
+      - Evidence Classification: docs/evidence-classification.md
+      - The Readiness Gate: docs/readiness-gate.md
+      - Scoring Model: docs/scoring-model.md
+      - Operating Guardrails: docs/operating-guardrails.md
+      - Scope Lock: docs/scope-lock.md
+      - Glossary: docs/glossary.md
+      - FAQ: docs/faq.md
+  - Operations:
+      - Running an Engagement: docs/running-an-engagement.md
+      - Agent Operations: docs/agent-operations.md
+      - Commercial Architecture: docs/commercial-architecture.md
+  - Prompt Modules:
+      - Index: prompts/README.md
+      - Master Prompt: prompts/master-prompt.md
+      - "SP-1 · Discovery Census": prompts/sp-01-process-discovery-census.md
+      - "SP-2 · SOP Standard": prompts/sp-02-sop-documentation-standard.md
+      - "SP-3 · Decision Logic": prompts/sp-03-decision-logic-extraction.md
+      - "SP-4 · Data Dependencies": prompts/sp-04-data-dependency-audit.md
+      - "SP-5 · Metrics Baseline": prompts/sp-05-metrics-baseline.md
+      - "SP-6 · Bottlenecks": prompts/sp-06-bottleneck-friction-analysis.md
+      - "SP-7 · Prioritization Matrix": prompts/sp-07-prioritization-matrix.md
+      - "SP-8 · Value Streams": prompts/sp-08-value-stream-mapping.md
+      - "SP-9 · Readiness Snapshot": prompts/sp-09-readiness-snapshot.md
+      - "SP-10 · Roadmap & Governance": prompts/sp-10-roadmap-governance.md
+  - Architecture:
+      - ADR Index: adr/README.md
+      - Schemas: schemas/README.md
+      - Tools: tools/README.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGELOG.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
+
+copyright: >-
+  Content CC BY 4.0, code MIT — Barry Hurd Intelligence Lab.
+  Human-Directed. AI-Enabled. Commercially Tested.
